@@ -19,6 +19,8 @@ import ember from 'eslint-plugin-ember/recommended';
 import prettier from 'eslint-plugin-prettier/recommended';
 import qunit from 'eslint-plugin-qunit';
 import n from 'eslint-plugin-n';
+import eslint from '@eslint/js';
+import tseslint from 'typescript-eslint';
 
 import babelParser from '@babel/eslint-parser';
 
@@ -32,12 +34,14 @@ const esmParserOptions = {
     ],
   },
 };
-
-export default [
+// @ts-check
+export default tseslint.config(
+  eslint.configs.recommended,
+  tseslint.configs.recommended,
   js.configs.recommended,
   prettier,
-  ember.configs.base,
-  ember.configs.gjs,
+  // ember.configs.base,
+  // ember.configs.gjs,
   /**
    * Ignores must be in their own object
    * https://eslint.org/docs/latest/use/configure/ignore
@@ -62,7 +66,7 @@ export default [
   {
     files: ['**/*.{js,gjs}'],
     languageOptions: {
-      parserOptions: esmParserOptions,
+      // parserOptions: esmParserOptions,
       globals: {
         ...globals.browser,
       },
@@ -71,7 +75,7 @@ export default [
   {
     files: ['tests/**/*-test.{js,gjs}'],
     plugins: {
-      qunit,
+      // qunit,
     },
   },
   /**
@@ -112,10 +116,10 @@ export default [
     languageOptions: {
       sourceType: 'module',
       ecmaVersion: 'latest',
-      parserOptions: esmParserOptions,
+      // parserOptions: esmParserOptions,
       globals: {
         ...globals.node,
       },
     },
   },
-];
+);
