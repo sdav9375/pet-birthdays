@@ -24,7 +24,6 @@ export default class IndexRoute extends Route {
       ],
     };
 
-    console.log('index.ts model:', data);
     return data;
   }
 }

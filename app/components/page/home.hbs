@@ -1,0 +1,23 @@
+<AddPetForm />
+<Hds::Table
+  @model={{@pets}}
+  @columns={{array
+    (hash label="Name")
+    (hash label="DOB")
+    (hash label="Age in years")
+    (hash label="Age in months")
+    (hash label="Age human years")
+    (hash label="Species")
+  }}
+>
+  <:body as |B|>
+    <B.Tr>
+      <B.Td>{{B.data.name}}</B.Td>
+      <B.Td>{{B.data.dob}}</B.Td>
+      <B.Td>{{B.data.ageYrs}}</B.Td>
+      <B.Td>{{B.data.ageMos}}</B.Td>
+      <B.Td>{{B.data.ageHuman}}</B.Td>
+      <B.Td>{{B.data.species}}</B.Td>
+    </B.Tr>
+  </:body>
+</Hds::Table>

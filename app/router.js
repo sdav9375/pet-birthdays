@@ -1,9 +1,13 @@
 import EmberRouter from '@ember/routing/router';
-import config from 'property-tracker/config/environment';
+import config from './config/environment';
 
-export default class Router extends EmberRouter {
+const Router = class extends EmberRouter {
   location = config.locationType;
   rootURL = config.rootURL;
-}
+};
 
-Router.map(function () {});
+Router.map(function () {
+  this.route('index', { path: '/' });
+});
+
+export default Router;
