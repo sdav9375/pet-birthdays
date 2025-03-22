@@ -1,5 +1,5 @@
-import Application from 'property-tracker/app';
-import config from 'property-tracker/config/environment';
+import Application from 'pet-birthdays/app';
+import config from 'pet-birthdays/config/environment';
 import * as QUnit from 'qunit';
 import { setApplication } from '@ember/test-helpers';
 import { setup } from 'qunit-dom';

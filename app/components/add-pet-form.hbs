@@ -17,22 +17,17 @@
     >
       <F.Label>Date of birth</F.Label>
     </Hds::Form::TextInput::Field>
-    <Hds::Form::Radio::Group
-      @layout="horizontal"
-      @name="pet-species"
-      value={{this.species}}
-      as |G|
-    >
+    <Hds::Form::Radio::Group @layout="horizontal" @name="species" as |G|>
       <G.Legend>Species</G.Legend>
       <G.RadioField
-        value="dog"
+        @value="dog"
         {{on "change" (pick "target.value" (set this "species"))}}
         as |F|
       >
         <F.Label>Dog</F.Label>
       </G.RadioField>
       <G.RadioField
-        value="cat"
+        @value="cat"
         {{on "change" (pick "target.value" (set this "species"))}}
         as |F|
       >

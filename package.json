@@ -1,8 +1,8 @@
 {
-  "name": "property-tracker",
+  "name": "pet-birthdays",
   "version": "0.0.0",
   "private": true,
-  "description": "Small description for property-tracker goes here",
+  "description": "An app for tracking pet data",
   "repository": "",
   "license": "MIT",
   "author": "",

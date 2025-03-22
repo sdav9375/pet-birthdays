@@ -2,7 +2,7 @@
 
 module.exports = function (environment) {
   const ENV = {
-    modulePrefix: 'property-tracker',
+    modulePrefix: 'pet-birthdays',
     environment,
     rootURL: '/',
     locationType: 'history',

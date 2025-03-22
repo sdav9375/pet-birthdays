@@ -1,5 +1,5 @@
 // Types for compiled templates
-declare module 'property-tracker/templates/*' {
+declare module 'pet-birthdays/templates/*' {
   import { TemplateFactory } from 'ember-cli-htmlbars';
 
   const tmpl: TemplateFactory;
