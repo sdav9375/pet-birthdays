@@ -69,6 +69,7 @@
     "eslint-plugin-prettier": "^5.2.3",
     "eslint-plugin-qunit": "^8.1.2",
     "globals": "^15.14.0",
+    "json-server": "1.0.0-beta.3",
     "loader.js": "^4.7.0",
     "prettier": "^3.4.2",
     "prettier-plugin-ember-template-tag": "^2.0.4",
@@ -93,5 +94,11 @@
     "@hashicorp/design-system-components": "^4.17.1",
     "@hashicorp/design-system-tokens": "^2.3.0",
     "@hashicorp/flight-icons": "^3.9.0"
+  },
+  "pnpm": {
+    "ignoredBuiltDependencies": [
+      "@parcel/watcher",
+      "core-js"
+    ]
   }
 }

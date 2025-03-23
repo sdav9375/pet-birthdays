@@ -8,7 +8,7 @@ export default class PetForm extends Component {
   @tracked species = undefined;
 
   @action
-  handleSubmit(event) {
+  handleSubmit(event: Event) {
     event.preventDefault();
 
     const body = {

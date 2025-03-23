@@ -10,4 +10,20 @@ body {
   font-family: var(--token-typography-body-200-font-family);
   font-size: var(--token-typography-body-200-font-size);
   line-height: var(--token-typography-body-200-line-height);
+  padding: 32px;
+}
+
+.hds-card__container {
+  padding: 32px;
+  margin-bottom: 32px;
+}
+
+.pet-form form {
+  display: grid;
+  grid-gap: 16px;
+
+  button {
+    width: min-content;
+    justify-self: right;
+  }
 }

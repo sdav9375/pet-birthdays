@@ -1,0 +1,34 @@
+{
+  "pets": [
+    {
+      "name": "Bruno",
+      "dob": "2017-04-04",
+      "species": "dog"
+    },
+    {
+      "name": "Holly",
+      "dob": "2019-04-14",
+      "species": "cat"
+    },
+    {
+      "name": "Ollie",
+      "dob": "2019-04-14",
+      "species": "cat"
+    },
+    {
+      "name": "Annie",
+      "dob": "2020-02-27",
+      "species": "dog"
+    },
+    {
+      "name": "Sammy",
+      "dob": "2024-04-07",
+      "species": "cat"
+    },
+    {
+      "name": "Leah",
+      "dob": "2024-05-05",
+      "species": "cat"
+    }
+  ]
+}
